@@ -10,16 +10,17 @@ export const Content = ({ data }: { data: PageBlocksContent }) => {
   return (
     <Section color={data.color}>
       <Container
-        className={`prose prose-lg ${
-          data.color === "primary" ? `prose-primary` : `dark:prose-dark`
-        }`}
+        className={`prose prose-lg ${data.color === "primary" ? `prose-primary` : `dark:prose-dark`
+          }`}
         data-tina-field={tinaField(data, "body")}
         size="large"
         width="medium"
       >
         <TinaMarkdown content={data.body} />
       </Container>
-    </Section>
+
+
+    </Section >
   );
 };
 
